@@ -1,0 +1,33 @@
+{
+  "name": "kazana-example",
+  "version": "0.0.0-semantically-released",
+  "description": "Kazana example app",
+  "main": "index.js",
+  "scripts": {
+    "start": "kazana",
+    "test": "semistandard",
+    "prepublish": "semantic-release pre",
+    "postpublish": "semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eHealthAfrica/kazana-example.git"
+  },
+  "keywords": [
+    "kazana",
+    "app"
+  ],
+  "author": "eHealth Africa",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/eHealthAfrica/kazana-example/issues"
+  },
+  "homepage": "https://github.com/eHealthAfrica/kazana-example#readme",
+  "dependencies": {
+    "kazana": "^1.0.0"
+  },
+  "devDependencies": {
+    "semantic-release": "^3.3.2",
+    "semistandard": "^6.1.2"
+  }
+}
