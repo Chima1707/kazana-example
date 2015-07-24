@@ -15,7 +15,7 @@ category.
 ```
 git clone git@github.com:eHealthAfrica/kazana-example.git
 cd kazana-example
-npm install # not working yet, see below
+npm install
 npm start
 ```
 
