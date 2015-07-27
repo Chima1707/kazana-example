@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/eHealthAfrica/kazana-example#readme",
   "dependencies": {
-    "kazana": "^1.0.1"
+    "kazana": "^1.1.3"
   },
   "devDependencies": {
     "semantic-release": "^3.3.2",
