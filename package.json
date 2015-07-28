@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "kazana",
+    "start:database": "kazana-database",
     "test": "semistandard",
     "prepublish": "semantic-release pre",
     "postpublish": "semantic-release post"
