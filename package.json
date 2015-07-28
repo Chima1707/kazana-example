@@ -6,6 +6,7 @@
   "scripts": {
     "start": "kazana",
     "start:database": "kazana-database",
+    "services": "kazana-services",
     "test": "semistandard",
     "prepublish": "semantic-release pre",
     "postpublish": "semantic-release post"
@@ -25,7 +26,7 @@
   },
   "homepage": "https://github.com/eHealthAfrica/kazana-example#readme",
   "dependencies": {
-    "kazana": "^1.2.0"
+    "kazana": "^1.3.0"
   },
   "devDependencies": {
     "semantic-release": "^3.3.2",
