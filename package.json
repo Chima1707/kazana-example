@@ -7,9 +7,7 @@
     "start": "kazana",
     "start:database": "kazana-database",
     "services": "kazana-services",
-    "test": "semistandard",
-    "prepublish": "semantic-release pre",
-    "postpublish": "semantic-release post"
+    "test": "semistandard"
   },
   "repository": {
     "type": "git",
