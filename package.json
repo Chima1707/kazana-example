@@ -6,7 +6,7 @@
     "start": "kazana",
     "services": "kazana-services",
     "env": "kazana-env",
-    "test": "semistandard",
+    "test": "standard",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -28,6 +28,6 @@
   },
   "devDependencies": {
     "semantic-release": "^4.0.3",
-    "semistandard": "^7.0.2"
+    "standard": "^5.1.0"
   }
 }
