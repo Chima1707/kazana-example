@@ -6,6 +6,9 @@ module.exports = {
   // serve static assets at root folder
   static: 'public',
 
+  // bootstrap data from bootstrap folder
+  bootstrap: 'bootstrap',
+
   // hapi routes
   routes: [{
     method: 'GET',
