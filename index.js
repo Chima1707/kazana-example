@@ -1,7 +1,6 @@
 module.exports = {
   name: 'myapp',
   version: '1.0.0',
-  port: 5000,
 
   // serve static assets at root folder
   static: 'public',
