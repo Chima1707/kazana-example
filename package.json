@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/eHealthAfrica/kazana-example#readme",
   "dependencies": {
-    "kazana": "4.6.0"
+    "kazana": "4.6.1"
   },
   "devDependencies": {
     "semantic-release": "^4.3.4",
