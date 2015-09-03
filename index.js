@@ -1,12 +1,14 @@
+var path = require('path')
+
 module.exports = {
   name: 'myapp',
   version: '1.0.0',
 
   // serve static assets at root folder
-  static: 'public',
+  static: path.resolve(__dirname, 'public'),
 
   // bootstrap data from bootstrap folder
-  bootstrap: 'bootstrap',
+  bootstrap: path.resolve(__dirname, 'bootstrap'),
 
   // hapi routes
   routes: [{
