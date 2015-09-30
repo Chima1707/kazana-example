@@ -26,7 +26,7 @@
     "kazana": "6.3.1"
   },
   "devDependencies": {
-    "semantic-release": "^4.3.5",
-    "standard": "^5.3.1"
+    "semantic-release": "4.3.5",
+    "standard": "5.3.1"
   }
 }
