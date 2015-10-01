@@ -34,6 +34,10 @@ rm -rf .git
 npm test
 ```
 
+### Use with integration tests for kazana
+
+This app is used for integration testing kazana. Please run the tests available here [https://github.com/eHealthAfrica/kazana-integration-test](https://github.com/eHealthAfrica/kazana-integration-test) when making changes.
+
 ## Credit
 
 Brought to you by [eHealth Africa](http://ehealthafrica.org/)
