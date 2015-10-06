@@ -18,43 +18,43 @@
     <h1>Bookkeeping</h1>
 
     <div id="account">
-      <form data-show="signed-out" action="/kazana/account/api/session" class="form-inline">
+      <form data-show="signed-out" data-qa="login-form" action="/kazana/account/api/session" class="form-inline">
         <div class="form-group">
           <label>Email</label>
-          <input type="text" class="form-control" name="email" value="kazana-admin@example.com" placeholder="john@example.com">
+          <input type="text" class="form-control" data-qa="email" name="email" value="kazana-admin@example.com" placeholder="john@example.com">
         </div>
         <div class="form-group">
           <label>Password</label>
-          <input type="password" class="form-control" name="password" value="secret">
+          <input type="password" class="form-control" data-qa="password" name="password" value="secret">
         </div>
         <button type="submit" class="btn btn-primary">Sign in</button>
       </form>
-      <p data-show="signed-in">
+      <p data-show="signed-in" data-qa="signed-in-user">
         Welcome back,<br>
-        <strong id="username"></strong>
-        (<a id="signout" href="signOut">sign out</a>)
+        <strong data-qa="username" id="username"></strong>
+        (<a id="signout" data-qa="signout" href="signOut">sign out</a>)
       </p>
     </div>
 
     <div data-show="signed-in">
-      <form action="/kazana/raw-data/api/submissions">
+      <form data-qa="report-form" action="/kazana/raw-data/api/submissions">
         <h2>Submit / Update report</h2>
         <div class="form-group">
-          <select name="scope[year]" class="form-control">
+          <select data-qa="report-year" name="scope[year]" class="form-control">
             <option>2015</option>
-            <option>2014</option>
+            <option data-qa="y2014">2014</option>
           </select>
         </div>
         <div class="form-group">
-          <select name="scope[quarter]"  class="form-control">
+          <select data-qa="report-quarter" name="scope[quarter]"  class="form-control">
             <option value="1">Q1</option>
             <option value="2">Q2</option>
             <option value="3">Q3</option>
-            <option value="4">Q4</option>
+            <option data-qa="Q4" value="4">Q4</option>
           </select>
         </div>
         <div class="form-group">
-          <input name="name" class="form-control" placeholder="report name">
+          <input name="name" data-qa="report-name" class="form-control" placeholder="report name">
         </div>
         <div class="form-group">
           <p class="help-block">
@@ -62,7 +62,7 @@
             "+123.40 category"
           </p>
 
-          <textarea name="data" class="form-control"></textarea>
+          <textarea name="data" data-qa="report-text" class="form-control"></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
