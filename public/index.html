@@ -80,9 +80,12 @@
       // send bearer token if present
       $.ajaxSetup({
         beforeSend: function (xhr) {
-          var token = localStorage.getItem('bearerToken')
+          var cookie = (/crumb=([^;]+);?/).exec(document.cookie);
+          if(cookie.length) {
+            var token = cookie[0].substring('crumb='.length)
+          }
           if (!token) return
-          xhr.setRequestHeader('authorization', 'Bearer ' + token)
+          xhr.setRequestHeader('X-CSRF-token', token)
         }
       })
 
