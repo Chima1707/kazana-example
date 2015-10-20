@@ -5,7 +5,7 @@ module.exports = {
   version: '1.0.0',
 
   // serve static assets at root folder
-  public: path.resolve(__dirname, 'public'),
+  static: path.resolve(__dirname, 'public'),
 
   // bootstrap data from bootstrap folder
   bootstrap: path.resolve(__dirname, 'bootstrap'),
